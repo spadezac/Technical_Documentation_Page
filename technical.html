@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!--- setting the viewport to make the website look good on all devices.--->
+        <meta name="author" content="Simran Gupta" />
+        <meta name="description" content="Technical Documentation Page" />
+        <meta name="keywords" content="HTML, CSS, Technical Documentation Page, freeCodeCamp, Responsive Web Design" /> <!--define keywords for search engines-->
+        <link rel="stylesheet" href="technical.css" />
+    </head>
+    <body>
+        <!-- Navigation bar -->
+        <nav id="navbar">
+            <header>HTML Documentation</header>
+            <ul>
+                <li><a class="nav-link" href="#What_is_HTML?">What is HTML?</a></li>
+                <li><a class="nav-link" href="#What_is_HTML_used_for?">What is HTML used for?</a></li>
+                <li><a class="nav-link" href="#Elements_and_Tags">Elements and Tags</a></li>
+                <li><a class="nav-link" href="#Basic_HTML_Page_Structure">Basic HTML Page Structure</a></li>
+                <li><a class="nav-link" href="#Characteristics_of_HTML">Characteristics of HTML</a></li>
+                <li><a class="nav-link" href="#Why_learn_HTML?">Why learn HTML?</a></li>
+                <li><a class="nav-link" href="#Advantages">Advantages</a></li>
+                <li><a class="nav-link" href="#Disadvantages">Disadvantages</a></li>
+                <li><a class="nav-link" href="#Reference">Reference</a></li>
+            </ul>
+        </nav>
+        <!--Main Documentation  -->
+            <main id="main-doc">
+                <!--Defining with paragraph tags-->
+                <section class="main-section" id="What_is_HTML?">
+                    <header>What is HTML?</header>
+                    <p>HTML stands for Hypertext Markup Language.It is a standard markup language used to design the documents displayed in the browsers as a web page. This language can
+                    become more interactive and attractive by using CSS ( Cascading Style Sheet) and JS (JavaScript) within it.</p>
+                    <p>The HTML word defines some specific meaning within it. Hypertext comes from the Hyperlink which means connections
+                    between several pages, Markup means the defined elements will be the page layout and elements within the page. The
+                    language combines both the feature and makes it Hypertext Markup Language.HTML is the combination of Hypertext and Markup language. Hypertext defines the link between the web pages and markup
+                    language defines the text document within the tag that define the structure of web pages.</p>
+                    <p>Initially, the HTML was released in the year of 1993 and developed by Tim Berners-Lee in 1990. Currently, the Web
+                    Hypertext Application Technology Working Group (WHATWG) community working on the development of the HTML. The current
+                    HTML5 version has gained so much popularity because of its newly added features in it. All the website’s skeleton is
+                    made of HTML and each browser performs on that and makes that visible and user-friendly to the user.</p>
+                </section>
+                <!-- Use with <p> tag-->
+                <section class="main-section" id="What_is_HTML_used_for?">
+                    <header>What is HTML used for?</header>
+                    <p>HTML is used to create the structure of web pages that are displayed on the World Wide Web (www). It contains Tags and
+                    Attributes that are used to design the web pages. Also, we can link multiple pages using Hyperlinks.</p>
+                </section>
+                <!-- Defining elements and giving examples with the help of <code> tag.   -->
+                <section class="main-section" id="Elements_and_Tags">
+                    <header>Elements and Tags</header>
+                    <p>An HTML element is defined by a start tag, some content, and an end tag. It is everything from the start tag to the end tag:</p>
+                    <!-- Made <code> tags' text display in multiple lines with the help of <p> tag.
+                    Could have used <pre> tag instead of <p> tag, but the result would be a block with multiple lines not indiviual multiple lines -->
+                    <code>&lttagname&gtContent goes here...&lt/tagname&gt</code>
+                    <p>Examples of some HTML Elements:</p>
+                    <p><code>&lth1&gtHeading goes here&lt/h1&gt</code></p>
+                    <p><code>&ltp&gtParagraph goes here&lt/p&gt</code></p>
+                    <p><code>&lti&gtItalic text goes here&lt/i&gt</code></p>
+                    <p><code>&ltb&gtBold text goes here&lt/b&gt</code></p>
+                </section>
+                <!-- Defining the basic structure-->
+                <section class="main-section"  id="Basic_HTML_Page_Structure">
+                    <header>Basic HTML Page Structure</header>
+                    <p>The basic structure of an HTML page is laid out below. It contains the essential building-block elements (i.e. doctype
+                    declaration, HTML, head, title, and body elements) upon which all web pages are created.</p>
+                    <!-- <pre> is used here to display as a block-level of code snippet. -->
+                    <pre>
+                        <code>
+                        &lt!DOCTYPE html&gt 
+                        &lthtml&gt 
+                        &lthead&gt 
+                            &lt!---Here goes the head information of the page---&gt 
+                        &lt/head&gt 
+                        &ltbody&gt 
+                            &lt!---Here goes the body of the page---&gt 
+                        &lt/body&gt 
+                        &lt/html&gt 
+                        </code>
+                    </pre>
+                    <!-- Each element has been described with the help of <ul> tag. -->
+                    <ul>
+                        <li>
+                            <strong><code>&lt!DOCTYPE html&gt</code></strong><strong>-</strong><p>A doctype or document type declaration is an instruction that tells the web browser about the markup language in which
+                            the current page is written. It is not an element or tag. The doctype declaration is not case-sensitive.</p>
+                        </li>
+                        <li>
+                            <strong><code>&lthtml&gt</code></strong><strong>-</strong>
+                        <p>This tag is used to define the root element of HTML document. This tag tells the browser that it is an HTML document. It
+                        is the second outer container element that contains all other elements within it.</p>
+                        </li>
+                        <li>
+                            <strong><code>&lthead&gt</code></strong><strong>-</strong>
+                            <p>This tag is used to define the head portion of the HTML document that contains information related to the document.
+                            Elements within the head tag are not visible on the front-end of a webpage.</p>
+                        </li>
+                        <li>
+                            <strong><code>&ltbody&gt</code></strong><strong>-</strong>
+                            <p>The body tag is used to enclose all the visible content of a webpage. In other words, the body content is what the
+                            browser will show on the front end.</p>
+                        </li>
+                    </ul>
+                    
+                </section>
+                <!-- Describing Characteristics with the help of <ul> tag -->
+                <section class="main-section" id="Characteristics_of_HTML">
+                    <header>Characteristics of HTML</header>
+                    <ul>
+                        <li><strong>Easy to understand:</strong><p>It is the most straightforward language you can say, very easy to grasp this language and easy to develop.</p></li>
+                        <li><strong>Flexibility:</strong><p>This language is so much flexible that you can create whatever you want, a flexible way to design web pages along with
+                        the text.</p></li>
+                        <li><strong>Linkable:</strong><p>You can make linkable text like users can connect from one page to another page or website through these
+                        characteristics.</p></li>
+                        <li><strong>Limitless features:</strong><p>You can add videos, GIFs, pictures, or sound anything you want that will make the website more attractive and
+                        understandable.</p></li>
+                        <li><strong>Support:</strong><p>You can use this language to display the documents on any platform like Windows, Linux, or Mac.</p></li>
+                        <li><strong>Not a Programming Language:</strong><p>HTML is not a programming language as it is only concerned with presenting the information on the web. It is not used to
+                        program any logic but to give structure and semantically meaning to our website. Though we can link JavaScript code to
+                        it which is a programming language.</p></li>
+                        <li><strong>Language Support:</strong><p>HTML can support various other languages like JavaScript, Ruby, PHP, Perl, and many more. You can also able to run embed
+                        python during the runtime.</p></li>
+                    </ul>
+                </section>
+                <!-- Use of <ul> tag -->
+                <section class="main-section" id="Why_learn_HTML?">
+                    <header>Why learn HTML?</header>
+                    <ul>
+                        <li>
+                            <p>It is a simple markup language. Its implementation is easy.</p></li>
+                        <li>
+                            <p>It is used to create a website.</p>
+                        </li>
+                        <li>
+                            <p>Helps in developing fundamentals about web programming.</p>
+                        </li>
+                        <li>
+                            <p>Boost professional career.</p>
+                        </li>
+                    </ul>
+                </section>
+                <!-- Describing Advantages with the help of <ul> tag -->
+                <section class="main-section" id="Advantages">
+                    <header>Advantages</header>
+                    <ul>
+                        <li>
+                            <p>HTML is easy to learn, easy to apply and it’s totally free you will just need a text editor and a browser.</p></li>
+                        <li>
+                            <p>HTML is supported by all the browsers and it is the most friendly search engine.</p>
+                        </li>
+                        <li>
+                            <p>HTML can easily integrate with other languages and is easy to develop.</p>
+                        </li>
+                        <li>
+                            <p>It is the basic of all programming languages and the lightest language ever.</p>
+                        </li>
+                        <li>
+                            <p>In HTML, the display changes frequently depending on the window size or the device size making it comfortable to read by
+                            the user.</p>
+                        </li>
+                    </ul>
+                </section>
+                <!-- Describing Disadvantages with ul -->
+                <section class="main-section" id="Disadvantages">
+                    <header>Disadvantages</header>
+                    <ul>
+                        <li>
+                            <p>HTML can be used to create only static Web-page, it can not create dynamic web-page.</p></li>
+                        <li>
+                            <p>There is a lack of security in HTML.</p>
+                        </li>
+                        <li>
+                            <p>Creating a simple Web-page required so many tags.</p>
+                        </li>
+                        <li>
+                            <p>HTML language is not centralised i.e. all the web pages that are connected, you have to design them separately else need
+                            to use CSS.</p>
+                        </li>
+                        <li>
+                            <p>HTML becomes complex when you try to create a huge website.</p>
+                        </li>
+                    </ul>
+                </section>
+                <!-- Referral to more info -->
+                <section class="main-section" id="Reference">
+                    <header>Reference</header>
+                    <p>All the documentation in this page is taken from <a href="https://www.geeksforgeeks.org/">GeeksforGeeks</a>.</p>
+                    <p>For those interested in learning HTML, you can go through <a href="https://www.geeksforgeeks.org/html/">HTML Tutorial</a> by GeeksforGeeks.</p>
+                </section>
+            </main>
+        </body>
+    </body>
+</html>

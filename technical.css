@@ -1,0 +1,141 @@
+html {
+    padding: o;
+    margin: -10px;
+    min-width: 290px;
+    line-height: 1.5;
+    font-family: 'Open Sans',Arial,sans-serif;
+    font-size: 16px;
+    color: rgba(0, 0, 0,0.6);
+    background-image: linear-gradient(to right, rgba(201, 222, 244, 0.6), rgba(245, 204, 212, 0.6), rgb(184, 164, 201, 0.6));
+}
+
+#navbar {
+    position: fixed;
+    height: 100%;
+    width: 300px;
+    min-width: 290px;
+    border-right: solid;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+nav {
+    display: block;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+nav li {
+    border-bottom-style: solid;
+    border-color: rgba(94, 61, 17, 0.4);
+}
+
+nav a {
+    display: block;
+    color: rgba(0, 0, 0,0.6);
+    padding: 20px 40px;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+
+nav li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+header {
+    font-weight:lighter;
+    font-size: 1.4rem;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 0px;
+}
+
+nav header {
+    padding-left: 40px;
+}
+
+#main-doc {
+    position: absolute;
+    margin-left: 310px;
+    padding: 20px;
+    margin-bottom: 110px
+}
+
+main {
+    display: block;
+}
+
+a {
+    color: rgba(0, 0, 255, 0.8);
+    text-decoration: none;
+}
+
+/* Mark */
+
+code {
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #f7f7f7;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 815px) {
+
+    /* For mobile phones: */
+    nav ul {
+        border: 1px solid;
+        height: 207px;
+    }
+
+    #navbar {
+        background-color: white;
+        position: absolute;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        max-height: 275px;
+        border: none;
+        z-index: 1;
+        border-bottom: 2px solid;
+    }
+
+    nav header {
+        text-align: center;
+    }
+
+    #main-doc {
+        position: relative;
+        margin-left: 0px;
+        margin-top: 270px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #main-doc {
+        margin-left: -10px;
+    }
+
+    code {
+        margin-left: -20px;
+        width: 100%;
+        padding: 15px;
+        padding-left: 10px;
+        padding-right: 45px;
+        min-width: 233px;
+    }
+}
+/* Mark */
